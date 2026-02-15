@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Faculty Dashboard - Smart University</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body onload="protectPage('faculty')">
+
+<!-- Header -->
+<header class="main-header">
+  <div class="logo-section">
+    <div class="logo-text">
+      <h1>Smart University</h1>
+      <p>Faculty Portal</p>
+    </div>
+
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+</header>
+
+<!-- Dashboard Section -->
+<section class="dashboard-container">
+
+  <div class="welcome-box faculty-welcome">
+    <h2>Welcome, Faculty 👩‍🏫</h2>
+    <p>Manage courses, attendance, and assignments efficiently.</p>
+  </div>
+
+  <div class="dashboard-cards">
+
+    <div class="dashboard-card">
+      <h3>📋 Manage Attendance</h3>
+      <p>Mark and update student attendance records.</p>
+      <a href="attendance.html" class="btn">Open</a>
+    </div>
+
+    <div class="dashboard-card">
+      <h3>📂 Upload Assignments</h3>
+      <p>Upload assignments and course materials.</p>
+      <a href="assignment-upload.html" class="btn">Upload</a>
+    </div>
+
+    <div class="dashboard-card">
+      <h3>👥 View Students</h3>
+      <p>Access student lists and academic details.</p>
+      <a href="#" class="btn">View</a>
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 Smart University | All Rights Reserved</p>
+</footer>
+
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+
+</body>
+</html>

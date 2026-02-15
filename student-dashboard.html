@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Dashboard - Smart University</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body onload="protectPage('student')">
+
+<!-- Header -->
+<header class="main-header">
+  <div class="logo-section">
+    <div class="logo-text">
+      <h1>Smart University</h1>
+      <p>Student Portal</p>
+    </div>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+</header>
+
+<!-- Dashboard Section -->
+<section class="dashboard-container">
+
+  <div class="welcome-box">
+    <h2>Welcome, Student 👋</h2>
+    <p>Manage your academic activities from here.</p>
+  </div>
+
+  <div class="dashboard-cards">
+
+    <div class="dashboard-card">
+      <h3>📚 My Courses</h3>
+      <p>View enrolled courses and materials.</p>
+      <a href="#" class="btn">View Courses</a>
+    </div>
+
+    <div class="dashboard-card">
+      <h3>📝 Attendance</h3>
+      <p>Check your attendance records.</p>
+      <a href="attendance.html" class="btn">View Attendance</a>
+    </div>
+
+    <div class="dashboard-card">
+      <h3>📂 Assignments</h3>
+      <p>View and download assignments.</p>
+      <a href="assignment-upload.html" class="btn">View Assignments</a>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 Smart University | All Rights Reserved</p>
+</footer>
+
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+
+</body>
+</html>
